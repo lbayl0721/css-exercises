@@ -9,13 +9,21 @@ body {
 
 img {
   width: 600px;
+  display: block;
+  margin: auto;
 }
 
 button {
   font-family: Roboto, sans-serif;
   border: none;
   border-radius: 8px;
-  background: #eee;
+  background: #eee;  
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 input {
@@ -24,4 +32,32 @@ input {
   padding: 8px 24px;
   width: 400px;
   margin-bottom: 16px;
+  display: block;
+  margin: auto;
+}
+
+.left-links, .right-links {
+  list-style-type: none;
+} 
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  display: inline;
+}
+
+.header, .footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eeee;
 }
